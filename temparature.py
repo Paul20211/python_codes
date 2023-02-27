@@ -1,3 +1,6 @@
+# create a class named temparature .make two method 
+# convert fahrenheit to  celsius it will take celsius and dislpay it into fahrenheit.
+# convert celsius it will take fahrenheit and dispay it in celsius,
 class Temparature:
     def __init__(self, convert_celsius, convert_fahrenheit):
         self.convert_celsius = convert_celsius
