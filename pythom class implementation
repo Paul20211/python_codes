@@ -1,0 +1,26 @@
+class File:
+    def __init__(self, filename):
+        self.filename = filename
+        self.read = None
+        self.write = None
+        self.close = None
+
+    def open_file(self):
+        self.read = open(self.filename, 'r')
+        self.write = open(self.filename, 'w')
+        self.close = open(self.filename, 'c')
+
+    def close_file(self):
+        if self.read:
+            self.read.close()
+        if self.write:
+            self.write.close()
+        if self.close:
+            self.close.close()
+
+file = File('example.txt')
+file.open_file()
+
+# Do some operations with the file
+
+file.close_file()
